@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './pages/Login';
 import CvUpload from './pages/CvUpload';
 import TemplateSelection from './pages/TemplateSelection';
+import Register from './pages/Register'; // Import the Register component
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
 
         {/* Route for selecting a CV template */}
         <Route path="/templates" element={<TemplateSelection />} />
+
+        {/* Route for registration */}
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
